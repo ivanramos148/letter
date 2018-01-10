@@ -11,52 +11,62 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Form Letter</h1>
+        <h1>Post-card editor</h1>
       </div>
     </div>
     <div class="formOne">
       <div class="well">
       <h2>Fill in info</h2>
       <form id="formOne">
-        <div class="form-group">
-          <label for="firstName">First Name</label>
-          <input id="firstName" class="form-control" type="text">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="firstName">First Name</label>
+            <input id="firstName" class="form-control" type="text">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" class="form-control" type="text">
+          </div>
         </div>
-        <div class="form-group">
-          <label for="lastName">Last Name</label>
-          <input id="lastName" class="form-control" type="text">
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="address">Address</label>
+            <input id="address" class="form-control" type="text">
+          </div>
         </div>
-        <div class="form-group">
-          <label for="address">Address</label>
-          <input id="address" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="city">City</label>
-          <input id="city" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="state">State</label>
-          <input id="state" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="zipCode">zip code</label>
-          <input id="zipCode" class="form-control" type="text">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="city">City</label>
+            <input id="city" class="form-control" type="text">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="state">State</label>
+            <input id="state" class="form-control" type="text">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="zipCode">zip code</label>
+            <input id="zipCode" class="form-control" type="text">
+          </div>
         </div>
         <button type="submit" class="btn">Submit</button>
       </form>
     </div>
   </div>
     <div id="letter">
-  <div class="panel panel-default">
+  <div class="panel panel-default" id="postcard">
     <div class="panel-body">
-      <p><span class="firstName"></span> <span class="lastName"></span>
-      <p><span class="address"></span>
-      <p><span class="city"></span>, <span class="state"></span>, <span class="zipCode"></span>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <img src="alaska.jpg" alt="alaska">
-    </div>
-    </div>
+      <div class="row">
+        <div class="col-md-5">
+          <p><span class="firstName"></span> <span class="lastName"></span>
+          <p><span class="address"></span>
+          <p><span class="city"></span>, <span class="state"></span>, <span class="zipCode"></span>
+        </div>
+        <div class="col-md-7">
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <img src="alaska.jpg" alt="alaska">
+        </div>
+      </div>
     </div>
   </body>
 </html>
